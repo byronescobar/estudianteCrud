@@ -1,0 +1,22 @@
+
+
+.card{
+    font-family: 'Times New Roman', Courier, monospace;
+    background: #808873;
+  
+
+}
+
+table {
+    width: 100%;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+
+
+i {
+    cursor:pointer;
+};

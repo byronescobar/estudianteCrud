@@ -3,8 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { FondoComponent } from './principal/fondo/fondo.component';
 import { ListEstudianteComponent } from './principal/list-estudiante/list-estudiante.component';
 import { PrincipalComponent } from './principal/principal.component';
-import { RegistroEstudianteComponent } from './principal/registro-estudiante/registro-estudiante.component';
-
+import { RegistroEstudianteComponent } from 
+        './principal/registro-estudiante/registro-estudiante.component';
 
 const routes: Routes = [
 {path:'',redirectTo: 'fondo', pathMatch:'full'},
@@ -13,7 +13,6 @@ const routes: Routes = [
 {path: 'list-estudiante', component:ListEstudianteComponent},
 {path: 'registro-estudiante/:id', component:RegistroEstudianteComponent},
 {path:"",redirectTo: 'principal', pathMatch:'full'},
-
 ];
 
 @NgModule({
@@ -21,5 +20,3 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-
-

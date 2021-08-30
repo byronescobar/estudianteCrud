@@ -1,4 +1,3 @@
-
 body{
     background: #808873;
 
@@ -6,10 +5,7 @@ body{
 
 .card{
     background: #808873;
-  
-
 }
-
 
 table {
     width: 100%;
@@ -20,9 +16,6 @@ table {
     width: 100%;
   }
 
-
 i {
     cursor:pointer;
 };
-
-    

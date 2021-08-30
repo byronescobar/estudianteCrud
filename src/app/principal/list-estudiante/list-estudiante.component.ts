@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { estudiante } from 'src/app/entidades/estudiantes';
 import { ActivatedRoute } from '@angular/router';
-import { MatTableDataSource } from '@angular/material/table';
 
 @Component({
   selector: 'app-list-estudiante',
@@ -15,19 +14,13 @@ export class ListEstudianteComponent implements OnInit {
   usuarios: any;
 
   constructor(private http: HttpClient, 
-              private activatedRoiuter:ActivatedRoute) { 
-                
+              private activatedRoiuter:ActivatedRoute) {  
                 http.get('https://frozen-meadow-48728.herokuapp.com/todos')
     .subscribe(response=>{this.usuarios=response});
-
               }
-
   ngOnInit(): void {
-  
-    
     }
   
-   //eliminar
    eliminar(id:number): void {
     if (confirm('¿Eliminar estudiante?')) {
       this.http.delete<estudiante>('https://frozen-meadow-48728.herokuapp.com/eliminar/' + id)

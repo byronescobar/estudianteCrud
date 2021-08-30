@@ -5,12 +5,10 @@
         border-radius: 10px;
         font-size: 30px;
     }
-    
     .card {
         background: #808873;
     }
     
     input[type="text"]{
-    
        background-color: rgb(202, 199, 192);
     }
